@@ -1,51 +1,104 @@
-Project Title: EnergiSense
-AI-Powered Smart Optimization for Power Plant Efficiency and Loss Reduction
+# ⚡ EnergiSense: AI-Powered Smart Prediction System for Power Plant Efficiency
 
-1. Problem Statement
-Modern power plants, including thermal, hydro, and solar, often suffer from energy inefficiencies due to a combination of factors:
+This project uses a trained **Ensemble Machine Learning model** in Simulink to predict **Power Output (PE)** based on real-time sensor inputs: **Ambient Temperature (AT)**, **Exhaust Vacuum (V)**, **Ambient Pressure (AP)**, and **Relative Humidity (RH)**.
 
-Manual control loops or poorly tuned PID systems.
+It compares predicted PE with actual values from the workspace, allowing visualization and feedback mechanisms for power plant efficiency analysis.
 
-Transmission and distribution losses.
+---
 
-Lack of real-time predictive maintenance.
+## 🧠 Project Highlights
 
-Sub-optimal load dispatch based on static scheduling rather than dynamic conditions.
+- ✅ MATLAB trained `ensemblePowerModel` used via `loadLearnerForCoder`
+- ✅ Simulink integration using `MATLAB Function` block
+- ✅ Inputs (`AT`, `V`, `AP`, `RH`) fed using `From Workspace` blocks
+- ✅ Real-time prediction and Scope-based visualization
+- ✅ Supports feedback/error signal calculation for further optimization
 
-These issues lead to increased energy waste, higher operational costs, and reduced power output.
+---
 
-2. Solution & Approach
-EnergiSense is an AI-driven system designed to address these inefficiencies. The solution combines real-time sensor data, system modeling, and machine learning to create a smart optimization engine. Key components include:
+## 📁 Project Files
 
-AI-Driven Predictive Maintenance: Machine learning models analyze sensor data (vibration, temperature, pressure) to detect anomalies and predict equipment failures before they cause significant energy loss.
+| File | Description |
+|------|-------------|
+| `EnergiSense_Model.slx` | Main Simulink model implementing Phases 1–4 |
+| `ensemblePowerModel.mat` | Trained ensemble model exported using `saveLearnerForCoder` |
+| `predictPower.m` | MATLAB function to load model and perform prediction |
+| `README.md` | Project documentation |
+| Input files (`AT`, `V`, `AP`, `RH`, `PE_actual`) | Time-series input data used for simulation |
 
-Energy Flow Optimization Engine: Uses a digital twin and AI to enable smart load balancing and operational synergy, ensuring power is dispatched efficiently.
+---
 
-3. Technologies Used
-Python: For data analysis, model training, and scripting.
+## 🔧 Requirements
 
-Pandas: For data manipulation and processing.
+- MATLAB R2022a or later  
+- Simulink  
+- Statistics and Machine Learning Toolbox (for training the model)  
+- Embedded Coder (optional for code generation)
 
-Scikit-learn: For machine learning model development (Linear Regression, Random Forest).
+---
 
-Matplotlib & Seaborn: For data visualization.
+## 📊 Inputs and Outputs
 
-MATLAB / Simulink: For system modeling, simulation, and creating a digital twin.
+### Inputs from Workspace:
+- `AT`: Ambient Temperature
+- `V`: Exhaust Vacuum
+- `AP`: Ambient Pressure
+- `RH`: Relative Humidity
+- `PE_actual`: Actual power output (used for comparison)
 
-GitHub: For version control and project management.
+### Output:
+- `PE_predicted`: Predicted using trained ML model
 
-4. Proof of Concept Results
-As an initial proof of concept, a predictive model was trained to forecast power plant output (PE) based on ambient conditions (AT, V, AP, RH). The Random Forest Regressor model demonstrated exceptional performance on unseen data:
+---
 
-Mean Absolute Error (MAE): 2.26 (On average, predictions were off by only 2.26 units).
+## 🔄 System Phases
 
-R-squared (R 
-2
- ) Score: 0.96 (The model can explain 96% of the variability in the power output).
+### ✅ Phase 1: Input Configuration
+- Inputs imported from MATLAB Workspace using `From Workspace` blocks
+- Must be in format: `[time, data]` with `double`, 2D, no NaN/Inf
 
-These results confirm that the selected features are strong predictors of power plant efficiency, providing a solid foundation for the full optimization system.
+### ✅ Phase 2: Model Prediction
+- Uses `predictPower.m` inside a `MATLAB Function` block
+- Predicts PE using `[AT, V, AP, RH]` as 1x4 input vector
 
-5. Project Status & Next Steps
-The project is currently in the proof of concept and system design phase.
+### ✅ Phase 3: Output Comparison
+- Actual vs Predicted PE signals connected to Scope
 
-Next Step: Transitioning the project to MATLAB to build a Simulink model (digital twin) that simulates the power plant's behavior and integrates the AI-driven optimization logic.
+### ✅ Phase 4: Visualization & Feedback
+- Scope visualizes real-time predicted vs actual PE
+- Feedback (error = PE_actual - PE_predicted) can be used to optimize further
+
+---
+
+## 📈 Sample Scope Output
+
+The following scope shows a good match between predicted and actual PE:
+
+> ![Alt text](C:\Users\Aryan\PycharmProjects\pythonProject\EnergiSense\img\Actual Vs Predicted PE.jpg) 
+> > 📉 **Scope Output**: The plot shows a strong alignment between predicted and actual power output, indicating high model accuracy and reliability in real-time prediction scenarios.
+
+
+---
+
+## 🚀 Getting Started
+
+1. Open MATLAB and load the workspace variables (`AT`, `V`, `AP`, `RH`, `PE_actual`)
+2. Open `EnergiSense_Model.slx`
+3. Click ▶️ **Run**
+4. Observe the **Scope** for prediction accuracy
+
+---
+
+## 🔁 Optional Extensions
+
+- Integrate Digital Twin (Simscape or external plant)
+- Online learning or model update logic
+- Feedback controllers to optimize system efficiency
+- Export C/C++ using Embedded Coder for real-time deployment
+
+---
+
+## 🧠 Authors & Credits
+
+- Developed by: **Aryan Yadav**  
+- Tools: MATLAB, Simulink, Machine Learning Toolbox
