@@ -74,7 +74,7 @@ It compares predicted PE with actual values from the workspace, allowing visuali
 
 The following scope shows a good match between predicted and actual PE:
 
-> ![Alt text](C:\Users\Aryan\PycharmProjects\pythonProject\EnergiSense\img\Actual Vs Predicted PE.jpg) 
+> 
 > > 📉 **Scope Output**: The plot shows a strong alignment between predicted and actual power output, indicating high model accuracy and reliability in real-time prediction scenarios.
 
 
