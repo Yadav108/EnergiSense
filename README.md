@@ -346,8 +346,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors & Acknowledgments
 
-- **Project Lead**: [Your Name] - *Digital Twin Architecture & Implementation*
-- **Research Lead**: [Your Name] - *Machine Learning Model Development*
+- **Project Lead**: [Aryan Yadav] - *Digital Twin Architecture & Implementation*
+- **Research Lead**: [Aryan Yadav] - *Machine Learning Model Development*
 
 ### Acknowledgments
 - UCI Machine Learning Repository for the CCPP dataset
