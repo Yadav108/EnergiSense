@@ -4,7 +4,6 @@
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2021a+-orange.svg)](https://www.mathworks.com/products/matlab.html)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Simulink](https://img.shields.io/badge/Simulink-Supported-blue.svg)](https://www.mathworks.com/products/simulink.html)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)]()
 
 ---
@@ -44,44 +43,6 @@
 - ⚠️ **Intelligent Alerts**: Threshold-based alarm management
 - 📸 **Data Visualization**: Live charts and performance indicators
 
-### 🏗️ **Industrial Integration**
-- 🔧 **Simulink Integration**: Production-ready control system
-- 📡 **Real-time Data**: Live sensor data processing
-- 🎚️ **Parameter Tuning**: Interactive control parameter adjustment
-- 💾 **Data Logging**: Historical performance tracking
-
----
-
-## 🏗️ System Architecture
-
-```mermaid
-graph TB
-    subgraph "Research Layer (Python)"
-        A[CCPP Dataset] --> B[Data Processing]
-        B --> C[ML Model Training]
-        C --> D[Model Validation]
-        D --> E[Performance Analysis]
-    end
-    
-    subgraph "Industrial Layer (MATLAB/Simulink)"
-        F[Environmental Sensors] --> G[Enhanced Prediction Engine]
-        G --> H[PID Control System]
-        H --> I[Actuator Commands]
-        G --> J[Real-time Dashboard]
-        H --> J
-    end
-    
-    subgraph "Digital Twin Core"
-        K[ensemblePowerModel.mat] --> G
-        L[Anomaly Detection] --> G
-        M[Confidence Estimation] --> G
-    end
-    
-    E -.-> K
-    J --> N[Monitoring & Alerts]
-    I --> O[Power Plant Control]
-```
-
 ---
 
 ## 📁 Project Structure
@@ -117,8 +78,7 @@ EnergiSense/
 │       └── Folds5X2.csv               # Original dataset
 │
 └── 📚 Documentation
-    ├── README.md                      # This file
-    └── .gitignore                     # Git configuration
+    └── README.md                      # This file
 ```
 
 ---
@@ -276,38 +236,6 @@ runDashboard();
 
 ---
 
-## 📈 Research Impact
-
-### Publications & Applications
-- **Industrial Relevance**: Production-ready control system design
-- **Academic Contribution**: Dual-layer digital twin architecture
-- **Practical Implementation**: Real-time CCPP optimization
-- **Future Research**: Predictive maintenance and efficiency optimization
-
-### Key Innovations
-1. **Seamless Research-to-Production Pipeline**
-2. **Integrated Anomaly Detection with Control**
-3. **Multi-Platform Digital Twin Architecture**
-4. **Real-time Performance Monitoring**
-
----
-
-## 🛡️ Quality Assurance
-
-### Testing Coverage
-- ✅ **Unit Tests**: Individual component validation
-- ✅ **Integration Tests**: End-to-end system verification
-- ✅ **Performance Tests**: Real-time processing validation
-- ✅ **Accuracy Tests**: ML model performance verification
-
-### Validation Methods
-- 📊 **Cross-validation**: 5-fold validation on training data
-- 🎯 **Hold-out Testing**: 20% test set validation
-- 🔄 **Real-time Testing**: Live system performance monitoring
-- 📈 **Comparative Analysis**: Baseline model comparisons
-
----
-
 ## 🚀 Future Enhancements
 
 ### Planned Features
@@ -328,7 +256,7 @@ runDashboard();
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+We welcome contributions from the community! 
 
 ### Development Areas
 - 🔬 **Research**: ML model improvements and validation
@@ -338,16 +266,10 @@ We welcome contributions from the community! Please see our [Contributing Guidel
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 👥 Authors & Acknowledgments
 
-- **Project Lead**: [Aryan Yadav] - *Digital Twin Architecture & Implementation*
-- **Research Lead**: [Aryan Yadav] - *Machine Learning Model Development*
+- **Project Lead**: Aryan Yadav - *Digital Twin Architecture & Implementation*
+- **Research Lead**: Aryan Yadav - *Machine Learning Model Development*
 
 ### Acknowledgments
 - UCI Machine Learning Repository for the CCPP dataset
@@ -369,7 +291,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [![GitHub Stars](https://img.shields.io/github/stars/Yadav108/EnergiSense?style=social)](https://github.com/Yadav108/EnergiSense/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/Yadav108/EnergiSense?style=social)](https://github.com/Yadav108/EnergiSense/network)
 [![GitHub Issues](https://img.shields.io/github/issues/Yadav108/EnergiSense)](https://github.com/Yadav108/EnergiSense/issues)
-[![GitHub License](https://img.shields.io/github/license/Yadav108/EnergiSense)](https://github.com/Yadav108/EnergiSense/blob/master/LICENSE)
 
 **Version**: 2.0.0  
 **Last Updated**: August 2025  
