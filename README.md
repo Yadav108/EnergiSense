@@ -142,17 +142,21 @@ runDashboard();
 cd('path/to/EnergiSense');
 addpath(genpath(pwd));
 
-% 2. Verify your model
-checkModel();
-% Expected: ✅ Model loaded successfully! Prediction: 442.22 MW
+% 2. Load CCPP dataset for Simulink
+load('Digitaltwin.mat');
+fprintf('✅ CCPP input/output data loaded\n');
 
-% 3. Test dashboard
+% 3. Verify your model
+checkModel();
+% Expected: ✅ Model loaded successfully! Prediction: 265.90 MW
+
+% 4. Test dashboard
 testDashboard();
 % Expected: 4-panel test dashboard appears
 
-% 4. Launch complete system
+% 5. Launch complete system with REAL data
 open_system('simulink/Energisense.slx');  % Open Simulink model
-sim('simulink/Energisense.slx');          % Run simulation
+sim('simulink/Energisense.slx');          % Run with actual CCPP data
 runDashboard();                           % Launch real-time monitoring
 ```
 
