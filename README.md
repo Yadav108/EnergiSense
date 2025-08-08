@@ -132,6 +132,49 @@ open_system('simulink/Energisense.slx');
 
 % Launch real-time monitoring
 runDashboard();
+
+## 🚀 Quick Start Guide
+
+### **Run EnergiSense in 5 Minutes:**
+
+```matlab
+% 1. Clone and setup
+cd('path/to/EnergiSense');
+addpath(genpath(pwd));
+
+% 2. Load CCPP dataset for Simulink
+load('Digitaltwin.mat');
+fprintf('✅ CCPP input/output data loaded\n');
+
+% 3. Verify your model
+checkModel();
+% Expected: ✅ Model loaded successfully! Prediction: 265.90 MW
+
+% 4. Test dashboard
+testDashboard();
+% Expected: 4-panel test dashboard appears
+
+% 5. Launch complete system with REAL data
+open_system('simulink/Energisense.slx');  % Open Simulink model
+sim('simulink/Energisense.slx');          % Run with actual CCPP data
+runDashboard();                           % Launch real-time monitoring
+```
+
+### **Expected Results:**
+- ✅ **Simulink Model**: Power predictions (~400-500 MW) with PID control
+- ✅ **Real-time Dashboard**: 6-panel monitoring interface 
+- ✅ **Performance**: 95%+ accuracy, <5% control error
+- ✅ **Console Output**: "Power: 442.2 MW, Confidence: 92.1%"
+
+### **🎯 Success Indicators:**
+| Component | Status | Expected Behavior |
+|-----------|--------|------------------|
+| Model Verification | ✅ | "Model loaded successfully" |
+| Dashboard Test | ✅ | 4 test plots appear |
+| Simulink Simulation | ✅ | Blue/yellow power traces |
+| Real-time Monitoring | ✅ | Live 6-panel dashboard |
+
+**📖 For detailed instructions and troubleshooting, see [SETUP_GUIDE.md](SETUP_GUIDE.md)**
 ```
 
 ---
