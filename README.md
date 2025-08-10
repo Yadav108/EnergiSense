@@ -27,22 +27,22 @@
 ## ✨ Key Achievements
 
 ### 🧠 **Machine Learning Performance**
-- 🎯 **High-Accuracy Prediction**: **99.1% accuracy** on UCI CCPP dataset
-- 📊 **Precision Metrics**: MAE: 4.2 MW, RMSE: 5.2 MW
-- 🎲 **Operating Range**: 422.4 - 487.9 MW predicted vs 426.2 - 487.7 MW actual
-- 🧪 **Model Type**: Ensemble Regression Trees (CompactRegressionEnsemble)
+-  **High-Accuracy Prediction**: **99.1% accuracy** on UCI CCPP dataset
+-  **Precision Metrics**: MAE: 4.2 MW, RMSE: 5.2 MW
+-  **Operating Range**: 422.4 - 487.9 MW predicted vs 426.2 - 487.7 MW actual
+-  **Model Type**: Ensemble Regression Trees (CompactRegressionEnsemble)
 
 ### 🎛️ **Control System Research**
-- 🔄 **PID Controller**: Anti-windup protection with simulation-based tuning
-- 📈 **Setpoint Tracking**: Research-grade control algorithm implementation
-- ⚡ **Simulation Response**: Optimized for research testing scenarios
-- 🛡️ **Stability Analysis**: Robust performance under varying conditions
+-  **PID Controller**: Anti-windup protection with simulation-based tuning
+-  **Setpoint Tracking**: Research-grade control algorithm implementation
+-  **Simulation Response**: Optimized for research testing scenarios
+-  **Stability Analysis**: Robust performance under varying conditions
 
 ### 📊 **Professional Platform**
-- 🖥️ **Research Dashboard**: 6-panel monitoring interface for analysis
-- 📈 **Performance Visualization**: Real-time charts and metrics tracking
-- ⚠️ **Data Analysis Tools**: Comprehensive validation and testing suite
-- 📸 **Result Documentation**: Automated report generation and visualization
+- **Research Dashboard**: 6-panel monitoring interface for analysis
+-  **Performance Visualization**: Real-time charts and metrics tracking
+-  **Data Analysis Tools**: Comprehensive validation and testing suite
+-  **Result Documentation**: Automated report generation and visualization
 
 ---
 
