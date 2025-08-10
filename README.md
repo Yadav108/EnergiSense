@@ -315,10 +315,10 @@ python main.py
 We welcome contributions from the academic and research community!
 
 ### **Research Areas**
-- 🔬 **Machine Learning**: Model improvements and algorithm development
-- 🎛️ **Control Systems**: Advanced control algorithm research
-- 📊 **Data Science**: Enhanced analytics and visualization tools
-- 📚 **Documentation**: Research guides and educational materials
+-  **Machine Learning**: Model improvements and algorithm development
+-  **Control Systems**: Advanced control algorithm research
+-  **Data Science**: Enhanced analytics and visualization tools
+-  **Documentation**: Research guides and educational materials
 
 ### **How to Contribute**
 1. Fork the repository
