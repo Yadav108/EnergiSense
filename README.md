@@ -46,7 +46,74 @@ The dashboard provides real-time monitoring with six integrated panels: power pr
 - **System Stability**: No oscillations observed during testing
 - **Integration**: Seamless connection between ML predictions and control
 
+---
 
+## 🗂️ **Project Structure**
+
+```
+EnergiSense/
+├── 📄 startup.m                    # Automatic path configuration
+├── 📄 setupEnergiSense.m          # Complete system setup and verification
+├── 📄 README.md                   # Project documentation
+├── 📄 LICENSE                     # MIT License file
+│
+├── 📁 core/                       # Core research components
+│   ├── 📁 models/
+│   │   ├── ensemblePowerModel.mat # 99.1% accuracy ML model
+│   │   └── digitaltwin.mat        # Digital twin system configuration
+│   ├── 📁 prediction/
+│   │   └── predictPowerEnhanced.m # Enhanced prediction function
+│   └── 📁 validation/
+│       ├── checkModel.m           # Model verification and testing
+│       └── checkModelUtils.m      # Validation utility functions
+│
+├── 📁 control/                    # Control system components
+│   ├── 📁 controllers/
+│   │   └── predictivePIDController.m # PID controller implementation
+│   └── 📁 tuning/
+│       └── configureEnergiSense.m    # Control parameter configuration
+│
+├── 📁 dashboard/                  # Real-time monitoring interface
+│   └── 📁 main/
+│       └── runDashboard.m         # Dashboard launcher and interface
+│
+├── 📁 simulation/                 # Simulink models and analysis
+│   ├── 📁 models/
+│   │   ├── Energisense.slx        # Complete digital twin Simulink model
+│   │   └── Energisense.slxc       # Compiled Simulink model cache
+│   └── 📁 analysis/
+│       ├── analyzeResults.m       # Performance analysis tools
+│       └── analyzeEnergiSenseResults.m # Comprehensive result analysis
+│
+├── 📁 data/                       # Research datasets and results
+│   ├── 📁 raw/
+│   │   └── Folds5X2.csv          # Original UCI CCPP dataset
+│   ├── 📁 processed/
+│   │   ├── ccpp_simin_cleaned.mat # Cleaned data for Simulink
+│   │   └── Es.mat                 # Ensemble model training data
+│   └── 📁 results/
+│       └── EnergiSense_Dashboard_Report.png # Dashboard screenshot
+│
+├── 📁 examples/                   # Usage examples and tutorials
+│   └── 📁 quickstart/
+│       └── demo.m                 # Main demonstration script
+│
+├── 📁 python/                     # Python implementation
+│   ├── main.py                    # Python research analysis script
+│   ├── requirements.txt           # Python package dependencies
+│   └── 📁 src/                    # Python source modules
+│       ├── __init__.py
+│       ├── models.py              # ML model definitions
+│       ├── data_loader.py         # Data processing utilities
+│       └── metrics.py             # Performance evaluation functions
+│
+├── 📁 utilities/                  # System utilities and tools
+│   └── 📁 system/
+│       └── systemCheck.m          # Installation verification script
+│
+└── 📁 docs/                       # Documentation
+    └── 📁 api/                    # API documentation (future)
+```
 
 ---
 
@@ -164,12 +231,6 @@ This work uses the Combined Cycle Power Plant dataset from the UCI Machine Learn
 - Energy optimization studies
 - Training and simulation tools
 
-
-
-
-
----
-
 ---
 
 ## 📋 **Citation**
@@ -186,31 +247,7 @@ Achieved 99.1% prediction accuracy on UCI CCPP dataset (2025)
 
 ## 📄 **License**
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2025 Aryan Yadav
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+This project is licensed under the MIT License.
 
 ---
 
