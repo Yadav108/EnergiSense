@@ -36,7 +36,7 @@ This platform serves as a research tool for power plant digitalization, machine 
 
 ### **Dashboard Interface**
 
-![EnergiSense Dashboard](data/results/EnergiSense_Dashboard_Report.png)
+![EnergiSense Dashboard](https://github.com/Yadav108/EnergiSense/blob/master/EnergiSense/data/results/EnergiSense_Dashboard_Report.png)
 
 The dashboard provides real-time monitoring with six integrated panels: power prediction tracking, environmental conditions monitoring, PID control signals, performance metrics, system status indicators, and historical trend analysis. The interface demonstrates effective real-time data visualization with clear color-coded status indicators for operational assessment.
 
