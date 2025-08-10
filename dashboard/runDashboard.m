@@ -1,5 +1,3 @@
-%% FILE 1: Save this as "runDashboard.m"
-
 function runDashboard()
 %% EnergiSense Professional Dashboard - Enhanced Version
 %% Comprehensive analysis with advanced visualizations
