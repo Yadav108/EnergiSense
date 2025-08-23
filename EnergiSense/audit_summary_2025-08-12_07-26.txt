@@ -1,0 +1,17 @@
+EnergiSense System Audit Summary
+================================
+Generated: 12-Aug-2025 07:26:52
+
+SYSTEM OVERVIEW:
+- MATLAB Version: 25.1.0.2973910 (R2025a) Update 1
+- MATLAB Files: 22
+- Simulink Files: 1
+- Data Files: 23
+
+DOCUMENTATION STATUS:
+- Documentation Coverage: 9.1%
+- README Present: Yes
+- User Guide Present: No
+
+PERFORMANCE:
+- Prediction Test: FAILED

@@ -12,7 +12,7 @@ def display_results(name, metrics):
 
 
 def main():
-    X_train, X_test, y_train, y_test = load_data("C:/Users/Aryan/OneDrive/Desktop/Projects/EnergiSense/CCPP/Folds5x2.csv")
+    X_train, X_test, y_train, y_test = load_data("../data/raw/Folds5x2.csv")
 
     lr_model = train_linear_regression(X_train, y_train)
     lr_metrics = evaluate_model(lr_model, X_test, y_test)

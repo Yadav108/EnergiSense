@@ -11,7 +11,9 @@ addpath(genpath('simulation'));
 addpath(genpath('utilities'));
 addpath(genpath('validation'));
 addpath(genpath('examples'));
+addpath(genpath('core/weather'));
 
 fprintf('✅ EnergiSense paths configured\n');
 fprintf('💡 Type: setupEnergiSense() for first-time setup\n');
 fprintf('🎮 Type: demo() to see the system in action\n');
+fprintf('✅ Weather intelligence module loaded\n');
